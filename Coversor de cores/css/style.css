@@ -1,0 +1,17 @@
+header{
+	text-align: center;
+	padding: 7px;
+	background-color: #b3cbff;
+	margin-bottom: 50px;
+}
+footer{
+	margin-top: 50px;
+	text-align: center;
+}
+.wrapper{
+	padding: 25px;
+	width: 550px;
+	margin: auto;
+	background-color: white;
+	border-radius: 5px;
+}

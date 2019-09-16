@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Conversor de cores</title>
+  </head>
+  <body>
+    <header>
+      <h1>Conversor de Cores</h1>
+    </header>
+
+    <div class="wrapper">
+      <div class="row">
+        <div class="form-group col">
+          <label for="selectColor">Color model</label>
+          <select class="form-control" id="selectColor" onchange="typeColorChange(this)">
+            <option>Hex</option>
+            <option>RGB</option>
+            <option>HSV</option>
+            <option>CMYK</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col">
+          <label for="inputHex">Hex</label>
+          <input type="text" class="form-control" id="inputHex" maxlength="6" placeholder="0099ff" onkeyup="Hexadecimal(this)">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-sm-4">
+          <label for="inputRed">Red</label>
+          <input type="text" class="form-control rgb" id="inputRed" maxlength="3" placeholder="(0-255)" onkeyup="RGB(this)">
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="inputGreen">Green</label>
+          <input type="text" class="form-control rgb" id="inputGreen" maxlength="3" placeholder="(0-255)" onkeyup="RGB(this)">
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="inputBlue">Blue</label>
+          <input type="text" class="form-control rgb" id="inputBlue" maxlength="3" placeholder="(0-255)" onkeyup="RGB(this)">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-sm-4">
+          <label for="inputHue">Hue</label>
+          <input type="text" class="form-control hsv" id="inputHue" maxlength="3" placeholder="(0-360)" onkeyup="HSV(this)">
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="inputSaturation">Saturation</label>
+          <input type="text" class="form-control hsv" id="inputSaturation" maxlength="3" placeholder="(0-100)" onkeyup="HSV(this)">
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="inputBrightness">Brightness</label>
+          <input type="text" class="form-control hsv" id="inputBrightness" maxlength="3" placeholder="(0-100)" onkeyup="HSV(this)">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-sm-3">
+          <label for="inputCyan">Cyan</label>
+          <input type="text" class="form-control cmyk" id="inputCyan" maxlength="3" placeholder="(0-100)" onkeyup="CMYK(this)">
+        </div>
+        <div class="form-group col-sm-3">
+          <label for="inputMagenta">Magenta</label>
+          <input type="text" class="form-control cmyk" id="inputMagenta" maxlength="3" placeholder="(0-100)" onkeyup="CMYK(this)">
+        </div>
+        <div class="form-group col-sm-3">
+          <label for="inputYellow">Yellow</label>
+          <input type="text" class="form-control cmyk" id="inputYellow" maxlength="3" placeholder="(0-100)" onkeyup="CMYK(this)">
+        </div>
+        <div class="form-group col-sm-3">
+          <label for="inputBlack">Black</label>
+          <input type="text" class="form-control cmyk" id="inputBlack" maxlength="3" placeholder="(0-100)" onkeyup="CMYK(this)"> 
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
